@@ -5,4 +5,8 @@
     <string name="http_lbl_api_title">Cat facts</string>
     <string name="http_btn_get_status_code_description">Get random cat fact</string>
     <string name="http_btn_get_cat_breeds">Get cat breeds</string>
+    <string name="websocket_hint_edit_message">Message</string>
+    <string name="websocket_btn_send_message">Send message</string>
+    <string name="websocket_error_message">Websocket error</string>
+    <string name="websocket_edit_message_error">Enter a message</string>
 </resources>
