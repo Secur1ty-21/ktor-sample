@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="feature.http.presentation.ui.HttpFragment">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="@string/main_btn_http_sample" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/lbl_api_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/http_lbl_api_title"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_get_random_cat_fact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/http_btn_get_status_code_description"
+            app:layout_constraintTop_toBottomOf="@id/lbl_api_title" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_get_cat_breeds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/http_btn_get_cat_breeds"
+            app:layout_constraintTop_toBottomOf="@id/btn_get_random_cat_fact" />
+
+        <TextView
+            android:id="@+id/lbl_random_cat_fact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:importantForAccessibility="no"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_get_cat_breeds" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            app:trackColor="@android:color/holo_blue_dark"
+            app:layout_constraintTop_toTopOf="@id/lbl_random_cat_fact"
+            app:layout_constraintEnd_toEndOf="@id/lbl_random_cat_fact"
+            app:layout_constraintStart_toStartOf="@id/lbl_random_cat_fact"
+            app:layout_constraintBottom_toBottomOf="@id/lbl_random_cat_fact" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

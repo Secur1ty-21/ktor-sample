@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.android.ktorsample.feature.main.presentation.ui.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_httpFragment"
+            app:destination="@id/httpFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_websocketFragment"
+            app:destination="@id/websocketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/httpFragment"
+        android:name="com.android.ktorsample.feature.http.presentation.ui.HttpFragment"
+        android:label="HttpFragment"
+        tools:layout="@layout/fragment_http" />
+    <fragment
+        android:id="@+id/websocketFragment"
+        android:name="com.android.ktorsample.feature.websocket.presentation.ui.WebsocketFragment"
+        android:label="WebsocketFragment"
+        tools:layout="@layout/fragment_websocket" />
+</navigation>

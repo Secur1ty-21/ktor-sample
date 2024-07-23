@@ -1,0 +1,7 @@
+<resources>
+    <style name="Base.Theme.KtorSample" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="ktor_sample_icon_color">@color/black</item>
+    </style>
+
+    <style name="Theme.KtorSample" parent="Base.Theme.KtorSample" />
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KtorSample</string>
+    <string name="main_btn_http_sample">Http sample</string>
+    <string name="main_btn_websocket_sample">Websocket sample</string>
+    <string name="http_lbl_api_title">Cat facts</string>
+    <string name="http_btn_get_status_code_description">Get random cat fact</string>
+    <string name="http_btn_get_cat_breeds">Get cat breeds</string>
+</resources>
